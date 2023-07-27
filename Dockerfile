@@ -14,7 +14,6 @@ RUN /bin/bash -c 'wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key
 
 # install nbdiff-web-exporter
 RUN pip install git+https://github.com/kuromt/nbdiff-web-exporter
-RUN pip install pip install jupyter_server==1.23.3 nbdime ipython_genutils
 
 COPY entrypoint.sh /entrypoint.sh
 
